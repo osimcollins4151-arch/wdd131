@@ -96,7 +96,7 @@ main h1 {
 }
 
 .about-content p,
-    .country-content p {
+.country-content p {
     font-size: 14px;
     line-height: 1.6;
 }
@@ -172,24 +172,24 @@ footer p {
 
 /* Mobile layout */
 @media screen and (max-width: 650px) {
-main {
-    grid-template-columns: 1fr;
-}
+    main {
+        grid-template-columns: 1fr;
+    }
 
-main h1 {
-    grid-column: 1;
-}
+    main h1 {
+        grid-column: 1;
+    }
 
-.country-content {
-    flex-direction: column;
-    align-items: center;
-}
+    .country-content {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.resources-card ul {
-    padding-top: 20px;
-}
+    .resources-card ul {
+        padding-top: 20px;
+    }
 
-nav {
-    flex-wrap: wrap;
-}
+    nav {
+        flex-wrap: wrap;
+    }
 }

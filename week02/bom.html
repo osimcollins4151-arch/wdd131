@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/bom.css" />
+    <title>Handling DOM Events</title>
+  </head>
+  <body>
+    <h1>📖 Book of Mormon - Top 10</h1>
+
+    <script src="scripts/bom.js" defer></script>
+
+    <main>
+      <form class="input" id="chapter-form">
+        <label for="favchap">Enter Book and Chapter: </label>
+        <input
+          type="text"
+          id="favchap"
+          name="chapter"
+          placeholder="Alma 5"
+          autocomplete="off"
+          aria-describedby="form-message"
+        />
+        <button type="submit">Add Chapter</button>
+      </form>
+      <p
+        id="form-message"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+      <ul id="list" class="list"></ul>
+    </main>
+  </body>
+</html>

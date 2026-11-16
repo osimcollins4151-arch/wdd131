@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Facts and weather information for Obudu Cattle Ranch in Cross River State, Nigeria."
+    />
+    <meta name="author" content="Osim Collins Ngboki" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="week03/styles/place.css" />
+    <script src="place.js" defer></script>
+    <title>Obudu Cattle Ranch | Place</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Obudu Cattle Ranch</h1>
+    </header>
+
+    <main>
+      <div class="hero">
+        <figure class="hero-image">
+          <picture>
+            <source
+              media="(min-width: 1000px)"
+              srcset="week03/images/obudu-large.webp"
+            />
+            <source
+              media="(min-width: 500px)"
+              srcset="week03/images/obudu-medium.webp"
+            />
+            <img
+              src="week03/images/obudu-small.webp"
+              alt="A cable car crossing the green mountains at Obudu Mountain Resort"
+            />
+          </picture>
+        </figure>
+
+        <section class="info-card data-card" aria-labelledby="data-heading">
+          <h2 id="data-heading">Data</h2>
+          <dl>
+            <div>
+              <dt>Area:</dt>
+              <dd>Approximately 634 sq km (resort area)</dd>
+            </div>
+            <div>
+              <dt>Population:</dt>
+              <dd>Approximately 1,556,000</dd>
+            </div>
+            <div>
+              <dt>Capital:</dt>
+              <dd>Sankwala (Obanliku LGA headquarters)</dd>
+            </div>
+            <div>
+              <dt>Language:</dt>
+              <dd>Bendi, Obanliku, Utanga, Becheeve and English</dd>
+            </div>
+            <div>
+              <dt>Currency:</dt>
+              <dd>Nigerian Naira (₦)</dd>
+            </div>
+            <div>
+              <dt>Time Zone:</dt>
+              <dd>UTC+1 (WAT)</dd>
+            </div>
+            <div>
+              <dt>Calling Code:</dt>
+              <dd>+234</dd>
+            </div>
+            <div>
+              <dt>Internet TLD:</dt>
+              <dd>.ng</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section
+          class="info-card weather-card"
+          aria-labelledby="weather-heading"
+        >
+          <div class="card-heading">
+            <h2 id="weather-heading">Weather</h2>
+            <svg
+              class="weather-icon-mobile"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
+              <path
+                d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+          <dl>
+            <div>
+              <dt>Temperature:</dt>
+              <dd>23°C – 34°C</dd>
+            </div>
+            <div>
+              <dt>Condition:</dt>
+              <dd>Sunny and clear</dd>
+            </div>
+            <div>
+              <dt>Wind:</dt>
+              <dd>South-westerly (SW), approximately 9 km/h</dd>
+            </div>
+            <div>
+              <dt>Wind Chill:</dt>
+              <dd id="wind-chill">N/A</dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy;<span id="current-year">2026</span>🌸 Osim Collins Ngboki 🌸
+        Obudu Cattle Ranch
+        <br />
+        Last Modification: <time id="last-modified">Unavailable</time>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,11 +1,20 @@
 :root {
   color-scheme: light;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  color: #242424;
-  background: #f5f5f5;
+  color: var(--text-primary);
+  background: var(--page-background);
+  --text-primary: #242424;
+  --page-background: #f5f5f5;
   --place-green: #087c4b;
   --place-green-dark: #075e3b;
   --info-heading-bg: #8a4b08;
+  --text-on-accent: #ffffff;
+  --hero-fallback: #435448;
+  --caption-background: #ffffffd1;
+  --card-background: #ffffffe0;
+  --card-shadow: #00000033;
+  --link-color: #174e38;
+  --weather-icon-color: #f5bc2f;
 }
 
 * {
@@ -29,7 +38,7 @@ body {
   padding: 12px 20px;
   border-bottom: 11px solid var(--place-green-dark);
   background: var(--place-green);
-  color: white;
+  color: var(--text-on-accent);
   text-align: center;
 }
 
@@ -48,7 +57,7 @@ main {
   flex: 1;
   min-height: 320px;
   overflow: hidden;
-  background: #435448;
+  background: var(--hero-fallback);
 }
 
 .hero-image {
@@ -78,13 +87,13 @@ main {
   max-width: calc(100% - 16px);
   padding: 5px 8px;
   border-radius: 2px;
-  background: rgb(255 255 255 / 82%);
+  background: var(--caption-background);
   font-size: 0.7rem;
   line-height: 1.4;
 }
 
 .hero-image a {
-  color: #174e38;
+  color: var(--link-color);
 }
 
 .info-card {
@@ -92,8 +101,8 @@ main {
   z-index: 1;
   width: clamp(250px, 30vw, 340px);
   padding: 0 10px 10px;
-  background: rgb(255 255 255 / 88%);
-  box-shadow: 0 2px 12px rgb(0 0 0 / 20%);
+  background: var(--card-background);
+  box-shadow: 0 2px 12px var(--card-shadow);
 }
 
 .data-card {
@@ -110,7 +119,7 @@ main {
   margin: 0 -10px 10px;
   padding: 10px;
   background: var(--info-heading-bg);
-  color: white;
+  color: var(--text-on-accent);
   font-size: 1.1rem;
 }
 
@@ -121,13 +130,13 @@ main {
   margin: 0 -10px 10px;
   padding: 0 10px;
   background: var(--info-heading-bg);
-  color: white;
+  color: var(--text-on-accent);
 }
 
 .card-heading h2 {
   margin: 0;
   padding: 12px 0;
-  background: transparent;
+  background: #00000000;
   color: inherit;
 }
 
@@ -135,7 +144,7 @@ main {
   display: none;
   width: 1.5rem;
   height: 1.5rem;
-  color: #f5bc2f;
+  color: var(--weather-icon-color);
   flex: none;
 }
 
@@ -172,7 +181,7 @@ main {
   place-items: center;
   padding: 12px;
   background: var(--place-green);
-  color: white;
+  color: var(--text-on-accent);
   text-align: center;
 }
 

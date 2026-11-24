@@ -144,21 +144,23 @@ function renderTemples(filterName) {
   filterTitle.textContent =
     filterName.charAt(0).toUpperCase() + filterName.slice(1);
 
-  navigation.querySelectorAll("[data-filter]").forEach((button) => {
-    button.setAttribute(
-      "aria-pressed",
-      String(button.dataset.filter === filterName)
-    );
+  navigation.querySelectorAll("[data-filter]").forEach((link) => {
+    if (link.dataset.filter === filterName) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
   });
 }
 
 navigation.addEventListener("click", (event) => {
-  const filterButton = event.target.closest("[data-filter]");
-  if (!filterButton) {
+  const filterLink = event.target.closest("[data-filter]");
+  if (!filterLink) {
     return;
   }
 
-  renderTemples(filterButton.dataset.filter);
+  event.preventDefault();
+  renderTemples(filterLink.dataset.filter);
   menuToggle.setAttribute("aria-expanded", "false");
   menuToggle.setAttribute("aria-label", "Open navigation menu");
   menuToggle.textContent = "☰";

@@ -1,21 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta
       name="description"
       content="Explore temples around the world with the filtered Temple Album."
     >
-    <meta name="author" content="Collins Osim">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="author" content="Collins Osim" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css" >
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" >
     <script src="scripts/filtered-temples.js" defer></script>
     <title>Filtered Temple Album</title>
   </head>
@@ -32,11 +32,12 @@
         ☰
       </button>
       <nav id="primary-navigation" aria-label="Temple filters">
-        <button type="button" data-filter="home" aria-pressed="true">Home</button>
-        <button type="button" data-filter="old" aria-pressed="false">Old</button>
-        <button type="button" data-filter="new" aria-pressed="false">New</button>
-        <button type="button" data-filter="large" aria-pressed="false">Large</button>
-        <button type="button" data-filter="small" aria-pressed="false">Small</button>
+        <a href="#temple-gallery" data-filter="home" aria-current="page"
+          >Home</a>
+        <a href="#temple-gallery" data-filter="old">Old</a>
+        <a href="#temple-gallery" data-filter="new">New</a>
+        <a href="#temple-gallery" data-filter="large">Large</a>
+        <a href="#temple-gallery" data-filter="small">Small</a>
       </nav>
     </header>
 

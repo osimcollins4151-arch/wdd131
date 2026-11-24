@@ -37,19 +37,16 @@ nav {
   gap: clamp(0.5rem, 3vw, 1.5rem);
 }
 
-nav button {
+nav a {
   padding: 0.25rem;
-  border: 0;
   color: inherit;
-  background: transparent;
   font: inherit;
   font-size: 0.8rem;
-  cursor: pointer;
 }
 
-nav button:hover,
-nav button:focus-visible,
-nav button[aria-pressed="true"] {
+nav a:hover,
+nav a:focus-visible,
+nav a[aria-current="page"] {
   text-decoration: underline;
 }
 
@@ -142,7 +139,7 @@ footer p {
   }
 
   .menu-toggle:focus-visible,
-  nav button:focus-visible {
+  nav a:focus-visible {
     outline: 3px solid #ffd66b;
     outline-offset: 3px;
   }

@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+main img {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+    background-color: #000;
+    animation: fade-from-black 2s ease-in-out both;
+}
+
+footer {
+    padding: 1rem;
+}
+
+@keyframes fade-from-black {
+    from {
+        opacity: 0;
+        filter: brightness(0);
+    }
+
+    to {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
